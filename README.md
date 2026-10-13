@@ -2,7 +2,8 @@
 
 ## Responsive Client Website with AI-Assisted Development
 
-## Group Members
-Farhan Junaidi
-Gbenga Obadea
-Zandile Gebuza
+### Group Members
+
+- Farhan Junaidi
+- Gbenga Obadea 
+- Zandile Gebuza
