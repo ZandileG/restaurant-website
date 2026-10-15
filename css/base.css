@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+ --dark: #1F2937; /* hero + footer background, info-header text */
+ --light-text: #F9FAF8; /* hero-main text, logo text */
+ --muted: #E5E7EB; /* quote background, hero-secondary + header link text */
+ --blue: #3882F6; /* button, CTA background */
+ --extra-bold: 800; /* hero-main weight */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero, footer {
+    background-color: var(--dark);
+}
+
+.hero-main text {
+    font-size: 48px;
+    font-weight: var(--extra-bold);
+    color: var(--light-text);
+}
+
+.hero-secondary text, header a {
+    font-size: 18px;
+    color: var(--muted);
+}
+
+header .logo {
+    font-size: 24px;
+    color: var(--light-text);
+}
+
+button, .cta {
+    background-color: var(--blue);
+}
+
+.info-header text {
+    font-size: 36px;
+    font-weight: var(--extra-bold);
+    color: var(--dark);
+}
+
+.quote-section {
+    background-color: var(--muted);
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: var(--dark);
+}
