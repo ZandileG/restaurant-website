@@ -1,3 +1,11 @@
+h2 {
+    text-align: center;
+}
+
+.hero-secondary img{
+    display: none;
+}
+
 @media (max-width: 375px) {
 
 }
