@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saltwell Kitchen Restaurant Website">
-    <title>About Us</title>
+    <meta name="description" content="Saltwell Kitchen - Our story, values, community impact, and the team behind the kitchens">
+    <title>About Us | Saltwell Kitchen</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/about.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -26,7 +26,157 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <span class="hero-label">OUR STORY & PURPOSE</span>
+                    <h1 id="hero-title" class="hero-main">Empowering Food Creators with World-Class Infrastructure</h1>
+                    <p class="hero-secondary">Founded in 2018, Saltwell Kitchen was born to dismantle astronomical capital hurdles for independent chefs, bakers, and culinary pioneers. We provide industrial-grade, certified commissaries so visionaries can craft, scale, and thrive without compromise.</p>
+                    <a href="/contact.html" class="cta-button cta-button-primary">Tour Our Facilities</a>
+                </div>
+                <div class="hero-image">
+                    <figure class="hero-figure">
+                        <picture>
+                            <source srcset="./images/about/about_image.jpg" type="image/jpeg" media="(min-width: 768px)">
+                            <img src="./images/about/about_image.jpg" alt="Saltwell Kitchen commercial kitchen facility with professional equipment and workstations" loading="lazy" width="800" height="600">
+                        </picture>
+                    </figure>
+                </div>
+            </div>
+        </section>
 
+        <!-- Values Section -->
+        <section id="values" class="services-section" aria-labelledby="values-heading">
+            <div class="section-header">
+                <span class="section-label">OUR VALUES</span>
+                <h2 id="values-heading" class="section-title">What Drives Saltwell Kitchen</h2>
+                <p class="section-subtext">Three foundational pillars engineered to support demanding commercial production runs and artisanal mastery.</p>
+            </div>
+            <div class="services-flex">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Culinary Excellence</h3>
+                    <p class="service-description">Sanitary grade-A environments equipped with Michelin-caliber Combi ovens, blast chillers, and precision prep gear.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-users" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Community and Growth</h3>
+                    <p class="service-description">Incubating local artisan brands and food trucks through peer networks, supply wholesale perks, and retail pipeline access.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-shield" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Operational Rigor</h3>
+                    <p class="service-description">24/7 keycard access, autonomous backup generators, dual-loop climate safety, and continuous cold chain telemetry.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Community Impact Section -->
+        <section id="impact" class="impact-section" aria-labelledby="impact-heading">
+            <div class="section-header">
+                <span class="section-label">IMPACT METRICS</span>
+                <h2 id="impact-heading" class="section-title">Our Community Impact</h2>
+                <p class="section-subtext">Measurable performance delivered to regional food ventures since inception.</p>
+            </div>
+            <dl class="stats-flex">
+                <div class="stat-card">
+                    <dt class="stat-number">120+</dt>
+                    <dd class="stat-label">Active Food Brands</dd>
+                    <dd class="stat-note">Scaled into retail and catering</dd>
+                </div>
+                <div class="stat-card">
+                    <dt class="stat-number">45k</dt>
+                    <dd class="stat-label">Sq Ft Facility</dd>
+                    <dd class="stat-note">HACCP and USDA certified</dd>
+                </div>
+                <div class="stat-card">
+                    <dt class="stat-number">99.98%</dt>
+                    <dd class="stat-label">Cold Chain Uptime</dd>
+                    <dd class="stat-note">Monitored walk-in freezers</dd>
+                </div>
+                <div class="stat-card">
+                    <dt class="stat-number">100%</dt>
+                    <dd class="stat-label">Inspection Pass Rate</dd>
+                    <dd class="stat-note">Department of Health audits</dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial-section" aria-labelledby="testimonial-heading">
+            <h2 id="testimonial-heading" class="visually-hidden">Founder Quote</h2>
+            <figure class="testimonial-card">
+                <blockquote class="testimonial-quote">
+                    <div class="quote-icon" aria-hidden="true">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <p>We built Saltwell Kitchen because no great culinary dream should die in red tape, prohibitive real estate costs, or inadequate equipment.</p>
+                </blockquote>
+                <figcaption class="testimonial-author">
+                    <strong>Marcus Vance and Sarah Lin</strong>
+                    <span>Co-Founders of Saltwell Kitchen</span>
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section" aria-labelledby="team-heading">
+            <div class="section-header">
+                <span class="section-label">OUR TEAM</span>
+                <h2 id="team-heading" class="section-title">Meet the Team Behind the Kitchens</h2>
+                <p class="section-subtext">Seasoned operators, certified master culinarians, and health safety specialists keeping our facilities humming around the clock.</p>
+            </div>
+            <div class="team-flex">
+                <article class="team-card">
+                    <figure class="team-figure">
+                        <img src="./images/about/about_image2.jpg" alt="Marcus Vance, Co-Founder and Head of Operations" loading="lazy" width="400" height="400">
+                    </figure>
+                    <div class="team-info">
+                        <h3 class="team-name">Marcus Vance</h3>
+                        <p class="team-role">Co-Founder and Head of Operations</p>
+                        <p class="team-bio">Former executive restaurant consultant with 18 years handling multi-unit commercial kitchen rollouts across the Pacific Northwest.</p>
+                    </div>
+                </article>
+                <article class="team-card">
+                    <figure class="team-figure">
+                        <img src="./images/about/about_image3.jpg" alt="Sarah Lin, Co-Founder and Facilities Director" loading="lazy" width="400" height="400">
+                    </figure>
+                    <div class="team-info">
+                        <h3 class="team-name">Sarah Lin</h3>
+                        <p class="team-role">Co-Founder and Facilities Director</p>
+                        <p class="team-bio">Viennoiserie artisan and culinary educator overseeing Saltwell's specialized pastry decks, proofers, and high-hydration equipment.</p>
+                    </div>
+                </article>
+                <article class="team-card">
+                    <figure class="team-figure">
+                        <img src="./images/about/about_image4.jpg" alt="David O'Reilly, Director of Food Safety and HACCP" loading="lazy" width="400" height="400">
+                    </figure>
+                    <div class="team-info">
+                        <h3 class="team-name">David O'Reilly</h3>
+                        <p class="team-role">Director of Food Safety and HACCP</p>
+                        <p class="team-bio">Certified FDA compliance officer steering routine microbiological sanitation audits and local health authority onboarding for members.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner" aria-labelledby="cta-heading">
+            <div class="cta-content">
+                <div class="cta-text-content">
+                    <h2 id="cta-heading" class="cta-title">Ready to build your food business with us?</h2>
+                    <p class="cta-text">Book an on-site walkthrough. Explore our production lines, walk-in refrigeration units, and community amenities.</p>
+                </div>
+                <a href="/contact.html" class="cta-button cta-button-outline">Schedule a Visit</a>
+            </div>
+        </section>
     </main>
 
     <footer>
