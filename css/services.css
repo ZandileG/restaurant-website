@@ -257,6 +257,11 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.service-card,
+.process-step {
+    box-sizing: border-box;
+}
+
 .service-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(31, 41, 55, 0.12);
@@ -340,18 +345,20 @@
 }
 
 .testimonial-card {
-    max-width: 800px;
+    max-width: 1140px;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.377);
     border-radius: 16px;
     padding: 3rem 2rem;
     box-shadow: 0 4px 16px rgba(31, 41, 55, 0.08);
+
 }
 
 .testimonial-quote {
     position: relative;
     padding-bottom: 2rem;
     margin-bottom: 1.5rem;
+    background-color: transparent;
 }
 
 .quote-icon {
@@ -363,7 +370,7 @@
 
 .testimonial-quote p {
     font-size: 36px;
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
     color: var(--dark);
     line-height: 1.4;
@@ -396,7 +403,7 @@
 }
 
 .cta-content {
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
     background-color: var(--blue);
     border-radius: 16px;
@@ -479,12 +486,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1rem;
     }
 
     .service-card {
-        flex: 1 1 calc(33.333% - 1rem);
-        min-width: 250px;
-        max-width: calc(33.333% - 1rem);
+        flex: 1 1 calc(33.333% - 0.67rem);
+        min-width: 220px;
+        max-width: calc(33.333% - 0.67rem);
     }
 
     /* Process: 3 steps in a row */
@@ -492,12 +500,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1rem;
     }
 
     .process-step {
-        flex: 1 1 calc(33.333% - 1rem);
-        min-width: 250px;
-        max-width: calc(33.333% - 1rem);
+        flex: 1 1 calc(33.333% - 0.67rem);
+        min-width: 220px;
+        max-width: calc(33.333% - 0.67rem);
     }
 
     /* Testimonial: larger quote text */
