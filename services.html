@@ -3,33 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saltwell Kitchen Restaurant Website">
-    <title>Our Services</title>
+    <meta name="description" content="Saltwell Kitchen - Commercial kitchen facilities and culinary infrastructure services">
+    <title>Our Services | Saltwell Kitchen</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
-        <section class="logo">Saltwell Kitchen</section>
+        <div class="logo">Saltwell Kitchen</div>
 
         <nav class="navbar">
-           <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-           </ul>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+            <label for="menu-toggle" class="menu-toggle-label" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/services.html" aria-current="page">Services</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <span class="hero-label">CULINARY INFRASTRUCTURE</span>
+                    <h1 id="hero-title" class="hero-main">Commercial Kitchens Built for Scale and Craft</h1>
+                    <p class="hero-secondary">Professional commissary facilities designed for food entrepreneurs, caterers, and growing brands. Health department certified, 24/7 monitored, and ready when you are.</p>
+                    <div class="hero-buttons">
+                        <a href="/contact.html" class="cta-button cta-button-primary">Get a Quote</a>
+                        <a href="#process" class="cta-button cta-button-secondary">
+                            View Process
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <figure class="hero-figure">
+                        <picture>
+                            <source srcset="./images/services/our_services_image.jpg" type="image/jpeg" media="(min-width: 768px)">
+                            <img src="./images/services/our_services_image.jpg" alt="Saltwell Kitchen commercial kitchen facility with professional equipment and workstations" loading="lazy">
+                        </picture>
+                        <figcaption class="hero-caption">
+                            <div class="caption-text">
+                                <span>Health Dept. Certified Tier-1</span>
+                                <span>24/7 Monitored Commissary Facility</span>
+                            </div>
+                            <div class="caption-icon" aria-hidden="true">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
 
+        <!-- Services Section -->
+        <section id="services" class="services-section" aria-labelledby="services-heading">
+            <div class="section-header">
+                <span class="section-label">OUR SOLUTIONS</span>
+                <h2 id="services-heading" class="section-title">Our Culinary Services</h2>
+                <p class="section-subtext">Flexible commercial kitchen solutions for every stage of your food business</p>
+            </div>
+            <div class="services-flex">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-door-open" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Dedicated Kitchen Suites</h3>
+                    <p class="service-description">Private, fully equipped kitchen suites for consistent high-volume production. Your space, your equipment, your schedule.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-users" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Shared Commissary Space</h3>
+                    <p class="service-description">Cost-effective access to professional-grade equipment and prep areas. Perfect for startups and part-time operators.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-snowflake" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Cold and Dry Storage</h3>
+                    <p class="service-description">Temperature-controlled walk-in coolers, freezers, and dry storage rooms. Secure, monitored, and accessible around the clock.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Process / How It Works Section -->
+        <section id="process" class="process-section" aria-labelledby="process-heading">
+            <div class="section-header">
+                <span class="section-label">PROCESS</span>
+                <h2 id="process-heading" class="section-title">How It Works</h2>
+            </div>
+            <div class="process-flex">
+                <article class="process-step">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Consult and Tour</h3>
+                    <p class="step-description">Schedule a walkthrough of our facility. We will review your production needs, volume, and schedule to recommend the right setup.</p>
+                </article>
+                <article class="process-step">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Select Your Plan</h3>
+                    <p class="step-description">Choose from dedicated suites, shared commissary access, or storage-only plans. Flexible terms scale with your business.</p>
+                </article>
+                <article class="process-step">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Onboard and Start Cooking</h3>
+                    <p class="step-description">Complete the quick onboarding, get your access credentials, and begin production in a certified commercial kitchen.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial-section" aria-labelledby="testimonial-heading">
+            <h2 id="testimonial-heading" class="visually-hidden">Client Testimonial</h2>
+            <figure class="testimonial-card">
+                <blockquote class="testimonial-quote">
+                    <div class="quote-icon" aria-hidden="true">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <p>Saltwell Kitchen gave our bakery the exact commercial infrastructure we needed to double our wholesale distribution without the immense overhead of building our own facility.</p>
+                </blockquote>
+                <figcaption class="testimonial-author">
+                    <strong>Elena Rostova</strong>
+                    <span>Founder and Head Baker at Hearth and Rye Artisans</span>
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Call-to-Action Banner -->
+        <section class="cta-banner" aria-labelledby="cta-heading">
+            <div class="cta-content">
+                <div class="cta-text-content">
+                    <h2 id="cta-heading" class="cta-title">Ready to scale your culinary venture?</h2>
+                    <p class="cta-text">Book a consultation today and explore how our commercial facilities fit your vision.</p>
+                </div>
+                <a href="/contact.html" class="cta-button cta-button-outline">Sign up</a>
+            </div>
+        </section>
     </main>
 
     <footer>
-      <p>Copyright © 2026 Saltwell Kitchen. All rights reserved.</p>
+        <p>Copyright © 2026 Saltwell Kitchen. All rights reserved.</p>
     </footer>
 </body>
 </html>
