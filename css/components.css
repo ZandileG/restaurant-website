@@ -41,6 +41,11 @@ footer {
     text-align: center;
 }
 
+footer p{
+    margin: 0;
+    padding: 30px;
+}
+
 .menu-toggle {
     display: none;
 }
