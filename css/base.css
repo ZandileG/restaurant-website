@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
- --dark: #1F2937; /* hero + footer background, info-header text */
- --light-text: #F9FAF8; /* hero-main text, logo text */
- --muted: #E5E7EB; /* quote background, hero-secondary + header link text */
- --blue: #3882F6; /* button, CTA background */
- --extra-bold: 800; /* hero-main weight */
+    --dark: #1F2937;
+    /* hero + footer background, info-header text */
+    --light-text: #F9FAF8;
+    /* hero-main text, logo text */
+    --muted: #E5E7EB;
+    /* quote background, hero-secondary + header link text */
+    --blue: #3882F6;
+    /* button, CTA background */
+    --extra-bold: 800;
+    /* hero-main weight */
 }
 
 body {
@@ -13,7 +18,9 @@ body {
     margin: 0;
 }
 
-.hero, header, footer {
+.hero,
+header,
+footer {
     background-color: var(--dark);
 }
 
@@ -23,7 +30,8 @@ body {
     color: var(--light-text);
 }
 
-.hero-secondary, header a {
+.hero-secondary,
+header a {
     font-size: 18px;
     color: var(--muted);
 }
@@ -33,7 +41,8 @@ header .logo {
     color: var(--light-text);
 }
 
-button, .cta {
+button,
+.cta {
     background-color: var(--blue);
 }
 
@@ -52,4 +61,37 @@ blockquote {
     font-weight: light;
     font-style: italic;
     color: var(--dark);
+}
+
+
+@media (max-width: 375px) {
+    h1.hero-main  {
+        font-size: 18px;
+    }
+
+    h2.cta-title {
+        font-size: 15px;
+    }
+
+    .quote {
+      font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1.hero-main {
+        font-size: 36px;
+    }
+
+    h2.cta-title {
+        font-size: 32px;
+    }
+
+    .quote {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1200px) {
+    
 }

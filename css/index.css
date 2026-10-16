@@ -124,6 +124,54 @@ main h2{
     flex-shrink: 0;
 }
 
+/* Quote */
+.quote-section {
+    background-color: var(--muted);
+    padding: 4rem 1.5rem;
+    margin-top: 4rem;
+}
+
+.quote-card {
+    max-width: 1140px;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+}
+
+blockquote {
+    position: relative;
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+}
+
+.quote-icon {
+    color: var(--blue);
+    font-size: 28px;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.quote-author {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+.quote-author strong {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.quote-author span {
+    font-size: 16px;
+    color: #6b7280;
+    font-weight: 400;
+}
+
 /* CTA */
 .cta-banner {
     padding: 4rem 1.5rem;
@@ -172,15 +220,27 @@ main h2{
 
 /* Media Queries*/
 @media (max-width: 375px) {
-
-}
-
-@media (max-width: 768px) {
-    .hero-inner {
+    .hero-inner, .cta-content {
         flex-direction: column;
+    }
+
+    .hero-content {
+        text-align: center;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
+    .hero-inner, .cta-content {
+        flex-direction: column;
+    }
 
+    .hero-content {
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .hero-inner {
+        padding: 5rem 3rem;
+    }
 }
