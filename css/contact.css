@@ -1,0 +1,161 @@
+.contact-intro,
+.contact-layout {
+    width: min(100% - 3rem, 1200px);
+    margin: 0 auto;
+}
+
+.contact-intro {
+    padding: 3rem 0 2rem;
+}
+
+.contact-intro h1 {
+    margin: 0 0 0.75rem;
+    color: var(--dark);
+    font-size: 2.25rem;
+}
+
+.contact-intro p {
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(260px, 1fr);
+    gap: 3rem;
+    padding-bottom: 4rem;
+}
+
+.contact-layout h2 {
+    margin: 0 0 1.25rem;
+    color: var(--dark);
+    font-size: 1.5rem;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.form-field {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.form-field > label,
+.form-field legend {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.form-field label span {
+    color: #6b7280;
+    font-weight: 400;
+}
+
+.form-field input:not([type="radio"]),
+.form-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    border: 1px solid #9ca3af;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.form-field textarea {
+    resize: vertical;
+}
+
+.request-type {
+    padding: 0;
+    border: 0;
+}
+
+.request-type legend {
+    margin-bottom: 0.75rem;
+}
+
+.request-type label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-submit {
+    justify-self: start;
+    padding: 0.75rem 1.5rem;
+    border: 0;
+    border-radius: 4px;
+    color: var(--light-text);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contact-submit:hover {
+    background-color: #2563eb;
+}
+
+.form-note {
+    margin: -0.75rem 0 0;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.contact-details {
+    display: grid;
+    align-content: start;
+    gap: 2.5rem;
+}
+
+.contact-details p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.contact-details a {
+    color: #1d4ed8;
+    overflow-wrap: anywhere;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.hours-table caption {
+    margin-bottom: 0.75rem;
+    color: #6b7280;
+    text-align: left;
+    font-size: 0.875rem;
+}
+
+.hours-table th,
+.hours-table td {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.hours-table th {
+    font-weight: 600;
+}
+
+.hours-table td {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .contact-intro {
+        padding-top: 2rem;
+    }
+}
