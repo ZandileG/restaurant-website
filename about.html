@@ -16,12 +16,16 @@
         <section class="logo">Saltwell Kitchen</section>
 
         <nav class="navbar">
-           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-           </ul>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+            <label for="menu-toggle" class="menu-toggle-label" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
