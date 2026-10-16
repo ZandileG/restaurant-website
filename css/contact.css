@@ -21,10 +21,18 @@
 }
 
 .contact-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1.5fr) minmax(260px, 1fr);
+    display: flex;
+    align-items: flex-start;
     gap: 3rem;
-    padding-bottom: 4rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+}
+
+.contact-form-section {
+    flex: 1.5 1 0;
+    min-width: 0;
 }
 
 .contact-layout h2 {
@@ -34,12 +42,14 @@
 }
 
 .contact-form {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 1.25rem;
 }
 
 .form-field {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 0.5rem;
     margin: 0;
 }
@@ -107,9 +117,15 @@
 }
 
 .contact-details {
-    display: grid;
+    flex: 1 1 0;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
     align-content: start;
     gap: 2.5rem;
+    background-color: #f9fafb;
+    padding: 2.5rem;
+    border-radius: 8px;
 }
 
 .contact-details p {
@@ -151,11 +167,28 @@
 
 @media (max-width: 768px) {
     .contact-layout {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 2.5rem;
+        padding: 1.5rem;
+    }
+
+    .contact-form-section,
+    .contact-details {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-details {
+        min-width: 0;
     }
 
     .contact-intro {
         padding-top: 2rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .contact-layout {
+        gap: 1rem;
     }
 }
