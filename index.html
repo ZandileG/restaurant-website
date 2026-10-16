@@ -4,39 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Saltwell Kitchen Restaurant Website">
-    <title>Home</title>
+    <title>Home | Saltwell Kitchen</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/components.css">
-    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <header> 
-        <section class="logo">Saltwell Kitchen</section>
+    <header class="header">
+        <a class="logo" href="index.html">Saltwell Kitchen</a>
 
         <nav class="navbar">
-           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-           </ul>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+            <label for="menu-toggle" class="menu-toggle-label" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-         <section class="hero">
-             <h1 class="hero-main">Welcome to Saltwell Kitchen</h1>
-            <p class="hero-secondary">Sentence</p>
-            <button><a href="services.html">Button</a></button>
-         </section>
-         <section class="hero-secondary">
-           <picture>
-             <source srcset="./images/hero/images.png" type="image/png">
-             <img src="./images/hero/images.png" alt="Saltwell Kitchen Restaurant">
-           </picture>
-         </section>
+        <!-- Hero -->
+        <section class="hero" aria-labelledby="hero-title">
+            <section class="hero-inner">
+                <section class="hero-content">
+                    <h1 id="hero-title" class="hero-main">Welcome To Saltwell Kitchen</h1>
+                    <p class="hero-secondary">Experience the perfect blend of flavor and functionality in our state-of-the-art restuarant.</p>
+                    <button">
+                        <a href="/services.html" class="cta-button cta-button-primary">Our Services</a>
+                    </button>
+                </section>
+
+                <section class="hero-image">
+                    <figure class="hero-figure">
+                        <picture>
+                            <source srcset="./images/home/home-hero.png" type="image/png" media="(min-width: 768px)">
+                            <img src="./images/home/home-hero.png" alt="Saltwell Kitchen Restaurant" loading="lazy">
+                        </picture>
+                    </figure>
+                </section>
+            </section>
+        </section>
 
          <h2>Heading</h2>
 

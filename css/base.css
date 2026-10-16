@@ -10,19 +10,20 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .hero, header, footer {
     background-color: var(--dark);
 }
 
-.hero-main text {
+.hero-main {
     font-size: 48px;
     font-weight: var(--extra-bold);
     color: var(--light-text);
 }
 
-.hero-secondary text, header a {
+.hero-secondary, header a {
     font-size: 18px;
     color: var(--muted);
 }
