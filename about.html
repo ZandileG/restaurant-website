@@ -14,17 +14,22 @@
     <header class="header">
         <a class="logo" href="index.html">Saltwell Kitchen</a>
 
+        <!-- Navbar -->
         <nav class="navbar">
             <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
             <label for="menu-toggle" class="menu-toggle-label" aria-hidden="true">
                 <span class="hamburger"></span>
             </label>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html" aria-current="page">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <aside class="nav-menu" aria-label="Main navigation">
+                <label for="menu-toggle" class="nav-close" aria-label="Close navigation menu">×</label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </aside>
+            <label for="menu-toggle" class="nav-overlay" aria-hidden="true"></label>
         </nav>
     </header>
 
@@ -183,6 +188,7 @@
     </main>
 
     <footer>
+      <a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top">↑</a>
       <p>Copyright © 2026 Saltwell Kitchen. All rights reserved.</p>
     </footer>
 </body>

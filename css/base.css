@@ -63,7 +63,7 @@ blockquote {
     color: var(--dark);
 }
 
-
+/* Media Queries */
 @media (max-width: 375px) {
     h1.hero-main  {
         font-size: 18px;
@@ -90,8 +90,4 @@ blockquote {
     .quote {
         font-size: 24px;
     }
-}
-
-@media (max-width: 1200px) {
-    
 }
