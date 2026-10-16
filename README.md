@@ -4,6 +4,5 @@
 
 ### Group Members
 
-- Farhan Junaidi
 - Gbenga Obadea 
 - Zandile Gebuza
