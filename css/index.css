@@ -53,15 +53,24 @@ main h2 {
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
-    text-decoration: none;
     transition: background-color 0.2s ease, transform 0.1s ease, border-color 0.2s ease;
     white-space: nowrap;
+}
+
+.cta-button a{
+    text-decoration: none;
+    color: var(--light-text);
+}
+
+.cta-button a:hover{
+    color: black;
 }
 
 .cta-button-primary {
     background-color: var(--blue);
     color: var(--light-text);
     border: 2px solid var(--blue);
+    text-decoration: none;
 }
 
 .cta-button-primary:hover {

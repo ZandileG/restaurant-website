@@ -1,133 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saltwell Kitchen Restaurant Website">
-    <title>Home | Saltwell Kitchen</title>
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/components.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Saltwell Kitchen Restaurant Website">
+        <title>Home | Saltwell Kitchen</title>
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/components.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
 
-<body>
-    <header class="header" id="top">
-        <a class="logo" href="index.html">Saltwell Kitchen</a>
+    <body>
+        <header class="header" id="top">
+            <a class="logo" href="index.html">Saltwell Kitchen</a>
 
         <!-- Navbar -->
-        <nav class="navbar">
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
-            <label for="menu-toggle" class="menu-toggle-label" aria-hidden="true">
-                <span class="hamburger"></span>
-            </label>
-            <aside class="nav-menu" aria-label="Main navigation">
-                <label for="menu-toggle" class="nav-close" aria-label="Close navigation menu">×</label>
-                <ul>
-                    <li><a href="index.html" aria-current="page">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </aside>
-            <label for="menu-toggle" class="nav-overlay" aria-hidden="true"></label>
-        </nav>
-    </header>
+            <nav class="navbar">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                <label for="menu-toggle" class="menu-toggle-label" aria-hidden="true">
+                    <span class="hamburger"></span>
+                </label>
 
-    <main>
+                <aside class="nav-menu" aria-label="Main navigation">
+                    <label for="menu-toggle" class="nav-close" aria-label="Close navigation menu">×</label>
+                    <ul>
+                        <li><a href="index.html" aria-current="page">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </aside>
+                <label for="menu-toggle" class="nav-overlay" aria-hidden="true">
+                </label>
+            </nav>
+        </header>
+
+        <main>
         <!-- Hero -->
-        <section class="hero" aria-labelledby="hero-title">
-            <section class="hero-inner">
-                <section class="hero-content">
-                    <h1 id="hero-title" class="hero-main">Welcome To Saltwell Kitchen</h1>
-                    <p class="hero-secondary">Saltwell Kitchen gives independent chefs, bakers, and culinary entrepreneurs access to certified, professional kitchen space to create and grow.</p>
-                    <button">
-                        <a href="services.html" class="cta-button cta-button-primary">Our Services</a>
-                    </button>
-                </section>
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-inner">
+                    <section class="hero-content">
+                        <h1 id="hero-title" class="hero-main">Welcome To Saltwell Kitchen</h1>
+                        <p class="hero-secondary">Saltwell Kitchen gives independent chefs, bakers, and culinary entrepreneurs access to certified, professional kitchen space to create and grow.</p>
+                        <button">
+                            <a href="services.html" class="cta-button cta-button-primary">Our Services</a>
+                        </button>
+                    </section>
 
-                <section class="hero-image">
-                    <figure class="hero-figure">
-                        <picture>
-                            <source srcset="./images/home/home-hero.png" type="image/png" media="(min-width: 768px)">
-                            <img src="./images/home/home-hero.png" alt="Saltwell Kitchen Restaurant Star Dish" loading="lazy">
-                        </picture>
-                    </figure>
-                </section>
+                    <picture class="hero-figure hero-image">
+                        <source srcset="./images/home/home-hero.png" type="image/png" media="(min-width: 768px)">
+                        <img src="./images/home/home-hero.png" alt="Saltwell Kitchen Restaurant Star Dish" loading="lazy">
+                    </picture>
+                </div>
             </section>
-        </section>
 
-         <h2>What We Offer</h2>
+        <h2>What We Offer</h2>
 
          <!-- Cards -->
-         <section class="menu-cards">
-         <section>
-            <figure>            
-                <img src="./images/home/cards/card-catering.png" alt="Saltwell Kitchen Catering Services">
-                <figcaption>Catering Services</figcaption>
-            </figure> 
-        </section>
+        <section class="menu-cards">
+            <div>
+                <figure>            
+                    <img src="./images/home/cards/card-catering.png" alt="Saltwell Kitchen Catering Services">
+                    <figcaption>Catering Services</figcaption>
+                </figure> 
+            </div>
 
-         <section>
-            <figure>            
-                <img src="./images/home/cards/card-tour.png" alt="Saltwell Kitchen Corporate Tours">
-                <figcaption>Corporate Tours</figcaption>
-            </figure> 
-        </section>
+            <div>
+                <figure>            
+                    <img src="./images/home/cards/card-tour.png" alt="Saltwell Kitchen Corporate Tours">
+                    <figcaption>Corporate Tours</figcaption>
+                </figure> 
+            </div>
 
-         <section>
-            <figure>            
-                <img src="./images/home/cards/card-food.png" alt="Saltwell Kitchen Custom Meals">
-                <figcaption>Custom Meals</figcaption>
-            </figure> 
-        </section>
+            <div>
+                <figure>            
+                    <img src="./images/home/cards/card-food.png" alt="Saltwell Kitchen Custom Meals">
+                    <figcaption>Custom Meals</figcaption>
+                </figure> 
+            </div>
 
-         <section>
-            <figure>            
-                <img src="./images/home/cards/card-event.png" alt="Saltwell Kitchen Event Hosting">
-                <figcaption>Hosting Events</figcaption>
-            </figure> 
+            <div>
+                <figure>            
+                    <img src="./images/home/cards/card-event.png" alt="Saltwell Kitchen Event Hosting">
+                    <figcaption>Hosting Events</figcaption>
+                </figure> 
+            </div>
         </section>
-         </section>
 
         <!-- Quote -->
         <section class="quote-section" aria-labelledby="quote-heading">
-            <figure class="quote-card">
+            <section class="quote-card">
                 <blockquote>
                     <section class="quote-icon" aria-hidden="true">
                         <i class="fa-solid fa-quote-left"></i>
                     </section>
                     <p class="quote">A great kitchen is more than a place to cook - it is where good ideas grow into something worth sharing.</p>
                 </blockquote>
-                <figcaption class="quote-author">
+
+                <p class="quote-author">
                     <strong>The Saltwell Kitchen Team</strong>
                     <span>Our philosophy</span>
-                </figcaption>
-            </figure>
+                </p>
+            </section>
         </section>
 
         <!-- CTA -->
         <section class="cta-banner" aria-labelledby="cta-heading">
-            <section class="cta-content">
+            <div class="cta-content">
                 <section class="cta-text-content">
                     <h3 id="cta-heading" class="cta-title">Need high quality catering services?</h3>
                     <p class="cta-text">Contact us to discuss your needs and reserve a date.</p>
                 </section>
-                <a href="contact.html" class="cta-button cta-button-outline">Contact Us</a>
-            </section>
+
+                <button class="cta-button cta-button-outline">
+                    <a href="contact.html">Contact Us</a>
+                </button>
+            </div>
         </section>
+        </main>
 
-    </main>
-
-    <footer>
-      <a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top">↑</a>
-      <p>Copyright © 2026 Saltwell Kitchen. All rights reserved.</p>
-       <ul class="mobile-footer-nav">
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </footer>
-</body>
+        <footer>
+            <a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top">↑</a>
+            <p>Copyright © 2026 Saltwell Kitchen. All rights reserved.</p>
+            
+            <ul class="mobile-footer-nav">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
 </html>
