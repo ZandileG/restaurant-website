@@ -1,115 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saltwell Kitchen Restaurant Website">
-    <title>Contact Us | Saltwell Kitchen</title>
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/components.css">
-    <link rel="stylesheet" href="./css/contact.css">
-</head>
-<body>
-    <header class="header">
-        <a class="logo" href="index.html">Saltwell Kitchen</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Saltwell Kitchen Restaurant Website">
+        <title>Contact Us | Saltwell Kitchen</title>
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/components.css">
+        <link rel="stylesheet" href="./css/contact.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <a class="logo" href="index.html">Saltwell Kitchen</a>
 
         <!-- Navbar -->
-        <nav class="navbar">
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
-            <label for="menu-toggle" class="menu-toggle-label" aria-hidden="true">
-                <span class="hamburger"></span>
-            </label>
-            <aside class="nav-menu" aria-label="Main navigation">
-                <label for="menu-toggle" class="nav-close" aria-label="Close navigation menu">×</label>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" aria-current="page">Contact</a></li>
-                </ul>
-            </aside>
-            <label for="menu-toggle" class="nav-overlay" aria-hidden="true"></label>
-        </nav>
-    </header>
+            <nav class="navbar">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                <label for="menu-toggle" class="menu-toggle-label" aria-hidden="true">
+                    <span class="hamburger"></span>
+                </label>
 
-    <!-- Contact Form and Details -->
-    <main>
-        <section class="contact-intro" aria-labelledby="contact-heading">
+                <aside class="nav-menu" aria-label="Main navigation">
+                    <label for="menu-toggle" class="nav-close" aria-label="Close navigation menu">×</label>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html" aria-current="page">Contact</a></li>
+                    </ul>
+                </aside>
+                <label for="menu-toggle" class="nav-overlay" aria-hidden="true"></label>
+            </nav>
+        </header>
+
+        <!-- Contact Form and Details -->
+        <main>
+            <section class="contact-intro" aria-labelledby="contact-heading">
             <h1 id="contact-heading">Contact Saltwell Kitchen</h1>
             <p>Tell us how we can help. We aim to respond to enquiries within one business day.</p>
-        </section>
-
-        <section class="contact-layout" aria-label="Enquiry form and contact information">
-            <section class="contact-form-section" aria-labelledby="enquiry-heading">
-                <h2 id="enquiry-heading">Send an enquiry</h2>
-                <form class="contact-form" action="mailto:saltwell.kitchen@gmail.com" method="post" enctype="text/plain">
-                    <section class="form-field">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="Name" autocomplete="name" required>
-                    </section>
-
-                    <section class="form-field">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="Email" autocomplete="email" required>
-                    </section>
-
-                    <section class="form-field">
-                        <label for="phone">Phone <span>(optional)</span></label>
-                        <input type="tel" id="phone" name="Phone" autocomplete="tel">
-                    </section>
-
-                    <fieldset class="form-field request-type">
-                        <legend>Type of request</legend>
-                        <label><input type="radio" name="Request type" value="Kitchen hire" required> Kitchen hire</label>
-                        <label><input type="radio" name="Request type" value="Catering"> Catering</label>
-                        <label><input type="radio" name="Request type" value="Event"> Event</label>
-                        <label><input type="radio" name="Request type" value="Other"> Other</label>
-                    </fieldset>
-
-                    <section class="form-field">
-                        <label for="date">Preferred date</label>
-                        <input type="date" id="date" name="Preferred date">
-                    </section>
-
-                    <section class="form-field">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="Message" rows="5" required></textarea>
-                    </section>
-
-                    <button class="contact-submit" type="submit">Send enquiry</button>
-                </form>
             </section>
 
-            <aside class="contact-details">
-                <section aria-labelledby="details-heading">
-                    <h2 id="details-heading">Contact details</h2>
-                    <p>Email: <a href="mailto:saltwell.kitchen@gmail.com">saltwell.kitchen@gmail.com</a></p>
-                    <p>Tel: <a href="tel:0123456789">012 345 6789</a></p>
+            <section class="contact-layout" aria-label="Enquiry form and contact information">
+                <section class="contact-form-section" aria-labelledby="enquiry-heading">
+                    <h2 id="enquiry-heading">Send an enquiry</h2>
+                    
+                    <form class="contact-form" action="mailto:saltwell.kitchen@gmail.com" method="post" enctype="text/plain">
+                        <section class="form-field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="Name" autocomplete="name" required>
+                        </section>
+
+                        <section class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="Email" autocomplete="email" required>
+                        </section>
+
+                        <section class="form-field">
+                            <label for="phone">Phone <span>(optional)</span></label>
+                            <input type="tel" id="phone" name="Phone" autocomplete="tel">
+                        </section>
+
+                        <fieldset class="form-field request-type">
+                            <legend>Type of request</legend>
+                            <label><input type="radio" name="Request type" value="Kitchen hire" required> Kitchen hire</label>
+                            <label><input type="radio" name="Request type" value="Catering"> Catering</label>
+                            <label><input type="radio" name="Request type" value="Event"> Event</label>
+                            <label><input type="radio" name="Request type" value="Other"> Other</label>
+                        </fieldset>
+
+                        <section class="form-field">
+                            <label for="date">Preferred date</label>
+                            <input type="date" id="date" name="Preferred date">
+                        </section>
+
+                        <section class="form-field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="Message" rows="5" required></textarea>
+                        </section>
+
+                        <button class="contact-submit" type="submit">Send enquiry</button>
+                    </form>
                 </section>
 
-                <section aria-labelledby="hours-heading">
-                    <h2 id="hours-heading">Opening hours</h2>
-                    <table class="hours-table">
-                        <tbody>
-                            <tr><th scope="row">Monday–Friday</th><td>9:00 am–5:00 pm</td></tr>
-                            <tr><th scope="row">Saturday</th><td>10:00 am–2:00 pm</td></tr>
-                            <tr><th scope="row">Sunday</th><td>Closed</td></tr>
-                        </tbody>
-                    </table>
-                </section>
-            </aside>
-        </section>
-    </main>
+                <aside class="contact-details">
+                    <section aria-labelledby="details-heading">
+                        <h2 id="details-heading">Contact details</h2>
+                        <p>Email: <a href="mailto:saltwell.kitchen@gmail.com">saltwell.kitchen@gmail.com</a></p>
+                        <p>Tel: <a href="tel:0123456789">012 345 6789</a></p>
+                    </section>
+
+                    <section aria-labelledby="hours-heading">
+                        <h2 id="hours-heading">Opening hours</h2>
+                        <table class="hours-table">
+                            <tbody>
+                                <tr><th scope="row">Monday–Friday</th><td>9:00 am–5:00 pm</td></tr>
+                                <tr><th scope="row">Saturday</th><td>10:00 am–2:00 pm</td></tr>
+                                <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </aside>
+            </section>
+        </main>
 
     <footer>
-      <a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top">↑</a>
-      <p>Copyright © 2026 Saltwell Kitchen. All rights reserved.</p>
-      <ul class="mobile-footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
-      </ul>
+        <a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top">↑</a>
+        <p>Copyright © 2026 Saltwell Kitchen. All rights reserved.</p>
+        
+        <ul class="mobile-footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
     </footer>
-</body>
+    </body>
 </html>
